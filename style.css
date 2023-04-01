@@ -1,0 +1,74 @@
+/* basic selctor */
+/* p {
+  color: red;
+}
+
+#fifth {
+  color: purple;
+}
+
+.pg {
+  color: green;
+} */
+
+section {
+  background: black;
+  color: white;
+}
+
+/* DEscendant (space) */
+section p {
+  color: green;
+}
+
+/* Child (>) */
+section > p {
+  color: purple;
+}
+
+/* Adjacent (+) */
+section + div {
+  color: maroon;
+}
+/* Sibling (~) */
+section ~ div {
+  color: cyan;
+}
+
+section div p {
+  font-size: 32px;
+}
+
+/* Attribute selector */
+/* [Attribute-Name] */
+[href] {
+  text-decoration: none;
+  color: red;
+}
+/* [Attribute-Name-="value"] */
+[href="contact.html"] {
+  background: brown;
+  color: white;
+}
+/* element[Attribute-Name] */
+a[href] {
+  text-decoration: line-through;
+  color: pink;
+}
+
+/* Pseudo-elements Selector */
+/* p::first-letter {
+  font-size: 32px;
+}
+p::first-line {
+  color: cyan;
+} */
+
+/* Pseudo-class Selector */
+a:hover {
+  font-size: 44px;
+}
+
+p:nth-child(Even) {
+  color: red;
+}
